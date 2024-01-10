@@ -15,3 +15,119 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
 }
+
+/* Common */
+
+input,
+button,
+select,
+textarea {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.container {
+    width: 1140px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --line-height: 57px;
+    display: inline-block;
+    min-width: 173px;
+    padding: 0 16px;
+    border-radius: 40px;
+    border: 1.5px solid #143c3c;
+    background: #143c3c;
+
+    color: #fff;
+    text-align: center;
+
+    /* Paragraph/h2 18px medium */
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: calc(var(--line-height) - 1.5px); /* 155.556% */
+    transition: 0.25s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.header-fixed {
+    position: sticky;
+    top: -15px;
+    z-index: 1;
+}
+
+/* Header */
+
+.header {
+    padding-top: 28px;
+    font-family: "Public Sans", sans-serif;
+}
+
+.header__body {
+    padding-bottom: 13px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(
+            to left,
+            #fff 0%,
+            #dddcdc 51.09%,
+            rgba(212, 212, 212, 0) 99.68%
+        )
+        1;
+}
+
+.header__nav {
+    margin-left: auto;
+}
+
+.header__list {
+    display: flex;
+    column-gap: 8px;
+}
+
+.header__link {
+    position: relative;
+    padding: 4px 15px;
+    color: #575d5e;
+    /* Paragraph/h2 18px medium */
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56; /* 155.556% */
+    transition: 0.25s;
+}
+
+.header__link:hover {
+    color: #152427;
+    text-shadow: 1px 0px 0px #152427;
+}
+
+.header__link-active {
+    text-shadow: 1px 0px 0px #152427;
+    color: #152427;
+}
+
+.header__link-active::before {
+    position: absolute;
+    display: inline-block;
+    left: 16px;
+    bottom: -29px;
+    content: "";
+    width: 16px;
+    height: 2px;
+    background: #143c3c;
+}
+
+.header__btn-sign-up {
+    margin-left: 73px;
+}
