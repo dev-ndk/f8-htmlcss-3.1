@@ -69,6 +69,7 @@ a {
 /* Header */
 
 .header {
+    background: #ffffff;
     padding-top: 28px;
     font-family: "Public Sans", sans-serif;
 }
@@ -130,4 +131,158 @@ a {
 
 .header__btn-sign-up {
     margin-left: 73px;
+}
+
+/* Hero */
+
+.hero {
+    font-family: "Public Sans", sans-serif;
+    padding: 60px 0 88px;
+}
+
+.hero-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__heading {
+    max-width: 368px;
+    color: #152427;
+    /* Heading/H2 50px Extra bold */
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.2; /* 120% */
+}
+
+.hero__desc {
+    margin-top: 20px;
+    color: #575d5e;
+    max-width: 341px;
+    /* Paragraph/h2 18px medium */
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.56; /* 155.556% */
+}
+
+.hero-cta {
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+    column-gap: 36px;
+}
+
+.hero-cta__watch {
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+    border: none;
+    background: transparent;
+}
+
+.hero-cta__watch:hover {
+    cursor: pointer;
+}
+
+.hero-cta__watch:hover .hero-cta__circle {
+    transform: rotate(496deg);
+    border-color: #83a17d transparent transparent #83a17d;
+}
+
+.hero-cta__watch:hover .hero-cta__icon {
+    background: #143c3c;
+}
+
+.hero-cta__watch:hover .hero-cta__icon-play {
+    transform: rotate(-16deg);
+}
+
+.hero-cta__watch:hover .hero-cta__title {
+    color: #83a17d;
+}
+.hero-cta__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    border-color: #143c3c transparent transparent #143c3c;
+    border-style: solid;
+    border-width: 4px;
+    transform: rotate(316deg);
+    transition: 0.25s;
+}
+
+.hero-cta__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #83a17d;
+    transition: 0.25s;
+}
+
+.hero-cta__icon-play {
+    color: #fef6fb;
+    transform: rotate(45deg);
+    transition: 0.25s;
+}
+
+.hero-cta__title {
+    color: #152427;
+    text-align: center;
+
+    /* Paragraph/h3 18px bold */
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+    transition: 0.25;
+}
+
+.hero__media {
+    position: relative;
+    width: 56.6%;
+    height: 466px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.hero__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 110px;
+    object-fit: cover;
+}
+
+.hero__img:nth-child(2) {
+    margin-top: 77px;
+}
+
+.hero__deco {
+    position: absolute;
+}
+
+.hero__deco-1 {
+    top: -32px;
+    left: -172px;
+}
+
+.hero__deco-2 {
+    left: -218px;
+    top: -31px;
+}
+
+.hero__deco-3 {
+    bottom: -145px;
+    right: 46px;
+}
+
+.hero__deco-4 {
+    bottom: -120px;
+    right: 3px;
 }
