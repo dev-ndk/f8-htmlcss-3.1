@@ -332,7 +332,7 @@ a {
 }
 
 .clients__body {
-    padding: 76px 121px;
+    padding: 56px 121px;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -344,6 +344,13 @@ a {
 .clients-logo__box {
     display: flex;
     align-items: center;
+    padding: 10px 8px;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.clients-logo:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .clients-logo__google {
