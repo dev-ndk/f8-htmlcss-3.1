@@ -851,3 +851,75 @@ a {
 }
 
 /* Project */
+
+.project {
+    background: #143c3c;
+    padding: 116px 0 63px;
+}
+
+.project__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project__heading {
+    position: relative;
+    width: 40%;
+    color: #e7f9f9;
+
+    /* Heading/H3 42px bold */
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24; /* 123.81% */
+}
+
+.project__heading::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    bottom: 20px;
+    right: 97px;
+    width: 66px;
+    height: 2px;
+    background: #83a17d;
+}
+
+.project__browse {
+    width: 51.7%;
+    font-family: "Public Sans", sans-serif;
+}
+
+.project__desc {
+    color: #6a8383;
+
+    /* Paragraph/h2 18px medium */
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56; /* 155.556% */
+}
+
+.project-browse-all {
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    column-gap: 26px;
+}
+
+.project-browse-all:hover .project-browse-all__title {
+    text-decoration: underline;
+}
+
+.project-browse-all__title {
+    color: #fff;
+
+    /* Paragraph/h2 18px medium */
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56; /* 155.556% */
+    transition: 0.25s;
+}
+
+.project-browse-all__icon {
+    color: #80a07b;
+}
