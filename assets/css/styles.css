@@ -923,3 +923,60 @@ a {
 .project-browse-all__icon {
     color: #80a07b;
 }
+
+.project__media {
+    margin-top: 65px;
+    position: relative;
+    height: 544px;
+    border-radius: 22px;
+}
+
+.project-video {
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+    object-fit: cover;
+}
+
+.project-video__btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.project-video__btn:hover {
+    cursor: pointer;
+    background: rgba(131, 161, 125, 0.7);
+}
+
+.project-video__btn:active {
+    display: none;
+}
+
+.project-video__icon {
+    color: #ffffff;
+}
+
+.project__icon-1 {
+    position: absolute;
+    top: -165px;
+    right: -50px;
+}
+
+.project__icon-2 {
+    position: absolute;
+    top: -70px;
+    right: -50px;
+}
