@@ -1185,6 +1185,10 @@ a {
     line-height: 1.67; /* 166.667% */
 }
 
+.blog-item__desc:hover {
+    text-decoration: underline;
+}
+
 .blog-item__date {
     width: 100%;
     text-align: end;
